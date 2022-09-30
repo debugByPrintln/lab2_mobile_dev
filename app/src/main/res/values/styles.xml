@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AAA -->
+    <style name="FirstSwitch" parent="Theme.AppCompat.Light">
+        <item name="trackTint">@android:color/darker_gray</item>
+        <!-- inactive -->
+        <item name="colorSwitchThumbNormal">@color/switch_off</item>
+        <!-- active -->
+        <item name="colorControlActivated">@color/first_main_color</item>
+    </style>
+</resources>
