@@ -29,7 +29,7 @@
             app:layout_constraintHorizontal_bias="0.042"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+            app:srcCompat="@drawable/menu32" />
 
         <TextView
             android:id="@+id/header_title"
@@ -51,10 +51,10 @@
             android:background="@color/bg_color_header_second"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.902"
+            app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toEndOf="@+id/header_title"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/settings" />
+            app:srcCompat="@drawable/settings32" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -94,63 +94,76 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="@drawable/second_button_shape"
+        android:backgroundTint="#18A3F5"
         android:text="@string/second_button_text"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_text"
-        app:layout_constraintVertical_bias="0.0"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:background="@color/bg_color_header_second"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="1.0"
-        android:orientation="horizontal"
-        android:background="@color/bg_color_header_second">
+        app:layout_constraintVertical_bias="1.0">
 
 
         <ImageButton
             android:id="@+id/footer_btn_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/home"
             android:layout_gravity="center"
-            android:backgroundTint="@color/bg_color_header_second"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_color_header_second"
+            app:srcCompat="@drawable/home" />
 
         <ImageButton
             android:id="@+id/footer_btn_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/search"
             android:layout_gravity="center"
-            android:backgroundTint="@color/bg_color_header_second"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_color_header_second"
+            app:srcCompat="@drawable/search" />
 
         <ImageButton
             android:id="@+id/footer_btn_bell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/bell"
             android:layout_gravity="center"
-            android:backgroundTint="@color/bg_color_header_second"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_color_header_second"
+            app:srcCompat="@drawable/bell" />
 
         <ImageButton
             android:id="@+id/footer_btn_mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/mail"
             android:layout_gravity="center"
-            android:backgroundTint="@color/bg_color_header_second"/>
+            android:layout_weight="1"
+            android:backgroundTint="@color/bg_color_header_second"
+            app:srcCompat="@drawable/mail" />
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#18A3F5"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angry_btn"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/mail_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
